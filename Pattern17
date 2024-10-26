@@ -1,0 +1,29 @@
+class Solution {
+public:
+    void pattern17(int n) {
+        for(int i=1;i<=n;i++)
+        {
+            char st='A';
+            for(int sp=n-i;sp>0;sp--)
+            {
+                cout<<" ";
+            }
+            for(int p=1;p<=i;p++)
+            {
+                cout<<st;
+                st++;
+            }
+            if(st=='B') {
+                cout<<endl;
+                continue;
+            }
+            st=st-2;
+            while(st>='A')
+            {
+                cout<<st;
+                st--;
+            }
+            cout<<endl;
+        }
+    }
+};
