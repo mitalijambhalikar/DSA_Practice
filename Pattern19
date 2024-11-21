@@ -1,0 +1,38 @@
+class Solution {
+public:
+    void pattern19(int n) {
+for(int i=1;i<=n;i++)
+{
+    for(int j=n;j>=i;j--)
+    {
+        cout<<"*";
+    }
+    for(int sp=1;sp<=(2*i)-2;sp++)
+    {
+        cout<<" ";
+    }
+    for(int k=n;k>=i;k--)
+    {
+        cout<<"*";
+    }
+    cout<<endl;
+}
+
+for(int a=1;a<=n;a++)
+{
+   for(int b=1;b<=a;b++)
+   {
+    cout<<"*";
+   }
+   for(int sps=1;sps<=((2*n)-(2*a));sps++)
+   {
+    cout<<" ";
+   }
+   for(int c=1;c<=a;c++)
+   {
+    cout<<"*";
+   }
+   cout<<endl;
+}
+}
+};
